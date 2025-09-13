@@ -1,5 +1,5 @@
 import requests
-import pytest
+
 
 BASE_URL = "https://api.kinopoisk.dev/v1.4/movie"
 api_token = "4C5MWNN-QYZ4B9P-GQ6VKV9-46X6BJ0"

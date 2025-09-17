@@ -31,6 +31,14 @@ class SearchPage:
         """
         self._driver.find_element(By.XPATH, '//a[text()="Роднина"]').click()
 
+    @allure.step("Возврат на главную страницу")
+    def go_main_page(self):
+        """
+        Осуществляет переход на главную страницу сайта
+        :param: img - иконка с названием Кинопоиск
+        """
+        self._driver.find_element(By.XPATH, '//img[@alt="Кинопоиск"]').click()
+
 
 
 

@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
 import allure
 
 class SearchPage:
@@ -10,10 +11,14 @@ class SearchPage:
         :param driver: WebDriver — объект драйвера Selenium.
         """
         self._driver = driver
-        self._driver.get("https://www.kinopoisk.ru/")
+        self._wait = WebDriverWait(driver, 30)
+
+    @allure.step("Открытие сайта Кинопоиск")
+    def open(self):
         """
         Открывает главную страницу сайта Кинопоиск
         """
+        self._driver.get("https://www.kinopoisk.ru/")
 
     @allure.step ("Поиск фильма")
     def input_movie(self):

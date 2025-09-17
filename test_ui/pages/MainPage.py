@@ -29,11 +29,11 @@ class MainPage:
         self._driver.find_element(By.XPATH, '//*[@data-tid="LogoKP"]').click()
 
     @allure.step ("Переход на страницу Билеты в кино")
-    def movie_tickets(self):
+    def sport(self):
         """
         Нажимает на кнопку 'Билеты в кино'
         """
-        self._driver.find_element(By.XPATH, '//span[text()="Билеты в кино"]').click()
+        self._driver.find_element(By.XPATH, '//span[text()="Спорт"]').click()
         """
         Открывается страница выбора билетов
         """

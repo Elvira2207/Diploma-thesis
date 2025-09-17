@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
 import allure
 
 class CinemaPage:
@@ -9,6 +10,10 @@ class CinemaPage:
         :param driver: WebDriver — объект драйвера Selenium.
         """
         self._driver = driver
+        self._wait = WebDriverWait(driver, 10)
+
+    @allure.step ("Открытие сайта Кинопоиск")
+    def open(self):
         self._driver.get("https://www.kinopoisk.ru/")
         """
         Открывает главную страницу сайта Кинопоиск

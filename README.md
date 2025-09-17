@@ -33,12 +33,18 @@ pytest –alluredir allure-result
 
 ### Структура
 
-*conftest.py*: Фикстура pytest - Инициализация браузера для UI тестов
-*test_api.py*: API тесты 
-*test_ui.py*: UI тесты с использованием Page Object
-*requirements.txt*: Список всех зависимостей проекта для установки через pip
-*README.md*: Документация
-*gitignore*: Игнорируемые файлы
+*conftest.py*: 
+Фикстура pytest - Инициализация браузера для UI тестов
+*test_api.py*: 
+API тесты 
+*test_ui.py*: 
+UI тесты с использованием Page Object
+*requirements.txt*: 
+Список всех зависимостей проекта для установки через pip
+*README.md*: 
+Документация
+*gitignore*: 
+Игнорируемые файлы
 
 ### Важные команды
 

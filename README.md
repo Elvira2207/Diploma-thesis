@@ -6,7 +6,7 @@
 2. **Selenium**: Библиотека для автоматизации взаимодействия с веб-браузером.
 3. **Pytest**: Фреймворк для написания и запуска тестов.
 4. **Allure**: Инструмент для генерации отчетов о выполнении тестов.
-5. **Браузеры Google Chrome
+5. **Браузеры Google Chrome**
    
 ### Шаги
 
@@ -33,17 +33,17 @@ pytest –alluredir allure-result
 
 ### Структура
 
-*conftest.py*: 
+**conftest.py**: 
 Фикстура pytest - Инициализация браузера для UI тестов
-*test_api.py*: 
+**test_api.py**: 
 API тесты 
-*test_ui.py*: 
+**test_ui.py**: 
 UI тесты с использованием Page Object
-*requirements.txt*: 
+**requirements.txt**: 
 Список всех зависимостей проекта для установки через pip
-*README.md*: 
+**README.md**: 
 Документация
-*gitignore*: 
+**gitignore**: 
 Игнорируемые файлы
 
 ### Важные команды

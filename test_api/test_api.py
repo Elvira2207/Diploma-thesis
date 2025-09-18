@@ -4,7 +4,7 @@ import allure
 
 
 BASE_URL = "https://api.kinopoisk.dev/v1.4/movie"
-api_token = "4C5MWNN-QYZ4B9P-GQ6VKV9-46X6BJ0"
+api_token = "" #В сопроводительном письме
 
 @allure.title ("Поиск по названию фильма")
 @allure.description("Тест проверяет корректность поисковой строки с позитивным параметром")

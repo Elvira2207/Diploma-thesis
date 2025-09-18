@@ -45,7 +45,7 @@ pytest –alluredir allure-result
 # Проверка кода на соответствие PEP8
 flake8 .
 # Запуск тестов с отчетом Allure
-pytest --alluredir=allure-results
+pytest --alluredir allure-results
 # Просмотр отчета Allure
 allure serve allure-results
 
